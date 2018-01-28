@@ -2,17 +2,101 @@
     "author": "Dumitru Ungureanu",
     "dependencies": {},
     "keywords": [],
-    "name": "itmitica-simple-watch",
+    "name": "itmitica-groovy",
     "pebble": {
         "capabilities": [
             "location"
         ],
-        "displayName": "Simple Watch - itmitica",
+        "displayName": "Groovy - itmitica",
         "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
         "resources": {
             "media": [
+                {
+                    "file": "fonts/timeburnerbold.ttf",
+                    "name": "timeburnerbold_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnerbold.ttf",
+                    "name": "timeburnerbold_26",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnerbold.ttf",
+                    "name": "timeburnerbold_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_22",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_26",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_40",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_38",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_32",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_30",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_28",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotJustGroovy.ttf",
+                    "name": "NotJustGroovy_14",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
                 {
                     "file": "images/wallpaper.png",
                     "name": "IMAGE_WALLPAPER",
@@ -24,72 +108,6 @@
                     "name": "IMAGE_SCREEN_SHOT",
                     "targetPlatforms": null,
                     "type": "bitmap"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_16",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_18",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_20",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_22",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_26",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_28",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_30",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_32",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_34",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/font.ttf",
-                    "name": "PERFECT_TIME_19",
-                    "targetPlatforms": null,
-                    "type": "font"
                 }
             ]
         },
@@ -97,10 +115,10 @@
         "targetPlatforms": [
             "aplite"
         ],
-        "uuid": "37693505-a00e-40f5-9a28-37c99dde2c70",
+        "uuid": "108fc212-c751-43e2-9f6e-4df42735b3db",
         "watchapp": {
             "watchface": true
         }
     },
-    "version": "1.90.0"
+    "version": "1.20.0"
 }

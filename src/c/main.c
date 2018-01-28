@@ -43,7 +43,7 @@ void update_date() {
   static char day[25];
   
     // Write the current date into the buffer
-    strftime(date, sizeof(date), "%d. %m. %Y", tick_time);
+    strftime(date, sizeof(date), "%d %b", tick_time);
     
     // Write the current day into the buffer
     strftime(day, sizeof(day), "%A", tick_time);
@@ -56,12 +56,12 @@ void update_date() {
     // Display this line on the LineLayer
     // Friday is an exception
     int weekdaytowidth = 0;
-    weekdaytowidth = 16 + 20*today;
+    weekdaytowidth = 10 + 20*today;
     
     if (today == 4) {
-      text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 16));
+      text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 10));
     } else {
-      text_layer_set_size(LineText, GSize(weekdaytowidth, 16));
+      text_layer_set_size(LineText, GSize(weekdaytowidth, 10));
     }
   
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %s", day);
@@ -80,10 +80,10 @@ void update_time() {
   // Write the current hours and minutes into the buffer
   if(clock_is_24h_style() == true) {
     //Use 24h hour format
-    strftime(time, sizeof("00: 00"), "%H: %M", tick_time);
+    strftime(time, sizeof("00:00"), "%H:%M", tick_time);
   } else {
     //Use 12 hour format
-    strftime(time, sizeof("00: 00"), "%I: %M", tick_time);
+    strftime(time, sizeof("00:00"), "%I:%M", tick_time);
   }
   
   // Display this time on the TextLayer
@@ -104,39 +104,39 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), (Layer *)Wallpaper);
   
   // Date Text
-  DateText = text_layer_create(GRect(0, 0, 144, 25));
+  DateText = text_layer_create(GRect(0, 70, 140, 24));
   text_layer_set_background_color(DateText, GColorClear);
-  text_layer_set_text_color(DateText, GColorBlack);
-  DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_PERFECT_TIME_19));
+  text_layer_set_text_color(DateText, GColorClear);
+  DateFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_timeburnerbold_24));
   text_layer_set_font(DateText, DateFont);
-  text_layer_set_text_alignment(DateText, GTextAlignmentCenter);
+  text_layer_set_text_alignment(DateText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DateText));
 
     // Day Text
-  DayText = text_layer_create(GRect(0, 24, 144, 16));
+  DayText = text_layer_create(GRect(0, 142, 140, 18));
   text_layer_set_background_color(DayText, GColorClear);
   text_layer_set_text_color(DayText, GColorClear);
   text_layer_set_text(DayText, "M  T  W  T  F  S  S");
-  DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_PERFECT_TIME_16));
+  DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_timeburnerbold_18));
   text_layer_set_font(DayText, DayFont);
-  text_layer_set_text_alignment(DayText, GTextAlignmentCenter);
+  text_layer_set_text_alignment(DayText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(2, 31, 16, 16));
+  LineText = text_layer_create(GRect(2, 150, 18, 18));
   text_layer_set_background_color(LineText, GColorClear);
   text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "_");
-  LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_PERFECT_TIME_16));
+  LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_timeburnerbold_18));
   text_layer_set_font(LineText, LineFont);
   text_layer_set_text_alignment(LineText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
   
   // Time Text
-  TimeText = text_layer_create(GRect(0, 135, 140, 24));
+  TimeText = text_layer_create(GRect(0, 95, 140, 40));
   text_layer_set_background_color(TimeText, GColorClear);
-  text_layer_set_text_color(TimeText, GColorBlack);
-  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_PERFECT_TIME_24));
+  text_layer_set_text_color(TimeText, GColorClear);
+  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_NotJustGroovy_40));
   text_layer_set_font(TimeText, TimeFont);
   text_layer_set_text_alignment(TimeText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(TimeText));
