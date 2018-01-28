@@ -48,21 +48,21 @@ void update_date() {
     // Write the current day into the buffer
     strftime(day, sizeof(day), "%A", tick_time);
     // Get the integer day value
-    today = convert(day);
+//     today = convert(day);
       
     // Display this date on the TextLayer
     text_layer_set_text(DateText, date);
     
     // Display this line on the LineLayer
     // Friday is an exception
-    int weekdaytowidth = 0;
-    weekdaytowidth = 10 + 20*today;
+//     int weekdaytowidth = 0;
+//     weekdaytowidth = 16 + 20*today;
     
-    if (today == 4) {
-      text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 10));
-    } else {
-      text_layer_set_size(LineText, GSize(weekdaytowidth, 10));
-    }
+//     if (today == 4) {
+//       text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 16));
+//     } else {
+//       text_layer_set_size(LineText, GSize(weekdaytowidth, 16));
+//     }
   
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %s", day);
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %d", strcmp(day, "Thursday"));
@@ -123,7 +123,7 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(2, 150, 18, 18));
+  LineText = text_layer_create(GRect(6, 146, 134, 18));
   text_layer_set_background_color(LineText, GColorClear);
   text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "_");

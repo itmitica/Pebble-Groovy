@@ -15,6 +15,18 @@
             "media": [
                 {
                     "file": "fonts/timeburnerbold.ttf",
+                    "name": "timeburnerbold_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnerbold.ttf",
+                    "name": "timeburnerbold_19",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnerbold.ttf",
                     "name": "timeburnerbold_24",
                     "targetPlatforms": null,
                     "type": "font"
