@@ -1,2 +1,2 @@
-# Pebble-TimeBurner
-Pebble Steel Watchface - Time Burner
+# Pebble-NotJustGroovy
+Pebble Steel Watchface - Not Just Groovy
