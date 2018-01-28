@@ -1,0 +1,106 @@
+{
+    "author": "Dumitru Ungureanu",
+    "dependencies": {},
+    "keywords": [],
+    "name": "itmitica-simple-watch",
+    "pebble": {
+        "capabilities": [
+            "location"
+        ],
+        "displayName": "Simple Watch - itmitica",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/wallpaper.png",
+                    "name": "IMAGE_WALLPAPER",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/screenshot.png",
+                    "name": "IMAGE_SCREEN_SHOT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_22",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_26",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_28",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_30",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_32",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_34",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/font.ttf",
+                    "name": "PERFECT_TIME_19",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite"
+        ],
+        "uuid": "37693505-a00e-40f5-9a28-37c99dde2c70",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.90.0"
+}
