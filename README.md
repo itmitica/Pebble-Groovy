@@ -1,2 +1,2 @@
-# Pebble-NotJustGroovy
-Pebble Steel Watchface - Not Just Groovy
+# Groovy
+Pebble Steel Watchface - Groovy
