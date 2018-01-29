@@ -14,98 +14,35 @@
         "resources": {
             "media": [
                 {
+                    "file": "fonts/trench100free.ttf",
+                    "name": "FONT_TRENCH_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/notjustgroovy.ttf",
+                    "name": "FONT_GROOVY_54",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/timeburnernormal.ttf",
+                    "name": "FONT_TIME_38",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnernormal.ttf",
+                    "name": "FONT_TIME_30",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
                     "file": "fonts/timeburnerbold.ttf",
-                    "name": "timeburnerbold_20",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnerbold.ttf",
-                    "name": "timeburnerbold_19",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnerbold.ttf",
-                    "name": "timeburnerbold_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnerbold.ttf",
-                    "name": "timeburnerbold_26",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnerbold.ttf",
-                    "name": "timeburnerbold_18",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_22",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_20",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_26",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_40",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_38",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_32",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_30",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_28",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_18",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/NotJustGroovy.ttf",
-                    "name": "NotJustGroovy_14",
+                    "name": "FONT_TIME_BOLD_48",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -132,5 +69,5 @@
             "watchface": true
         }
     },
-    "version": "1.20.0"
+    "version": "1.50.0"
 }
