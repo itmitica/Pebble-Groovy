@@ -14,13 +14,19 @@
         "resources": {
             "media": [
                 {
-                    "file": "fonts/imagine.ttf",
-                    "name": "FONT_IMAGINE_16",
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_13",
                     "targetPlatforms": null,
                     "type": "font"
                 },
                 {
-                    "file": "fonts/ravepartybold.ttf",
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_14",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Ravebold.ttf",
                     "name": "FONT_RAVE_BOLD_12",
                     "targetPlatforms": null,
                     "type": "font"
@@ -85,5 +91,5 @@
             "watchface": true
         }
     },
-    "version": "1.50.0"
+    "version": "1.80.0"
 }
