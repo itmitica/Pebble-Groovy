@@ -32,7 +32,7 @@ Day convert(const char *str)
 
 void update_date() {
   // Other types declaration
-//   Day today;
+  Day today;
   
   // Get a tm structure
   time_t temp = time(NULL); 
@@ -48,21 +48,21 @@ void update_date() {
     // Write the current day into the buffer
     strftime(day, sizeof(day), "%A", tick_time);
     // Get the integer day value
-//     today = convert(day);
+    today = convert(day);
       
     // Display this date on the TextLayer
     text_layer_set_text(DateText, date);
     
     // Display this line on the LineLayer
     // Friday is an exception
-//     int weekdaytowidth = 0;
-//     weekdaytowidth = 16 + 20*today;
+    int weekdaytowidth = 0;
+    weekdaytowidth = 16 + 20*today;
     
-//     if (today == 4) {
-//       text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 16));
-//     } else {
-//       text_layer_set_size(LineText, GSize(weekdaytowidth, 16));
-//     }
+    if (today == 4) {
+      text_layer_set_size(LineText, GSize(weekdaytowidth - 3, 16));
+    } else {
+      text_layer_set_size(LineText, GSize(weekdaytowidth, 16));
+    }
   
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %s", day);
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %d", strcmp(day, "Thursday"));
@@ -113,30 +113,30 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DateText));
 
     // Day Text
-  DayText = text_layer_create(GRect(0, 62, 140, 20));
+  DayText = text_layer_create(GRect(0, 66, 140, 20));
   text_layer_set_background_color(DayText, GColorClear);
   text_layer_set_text_color(DayText, GColorClear);
   text_layer_set_text(DayText, "M  T  W  T  F  S  S");
-  DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TRENCH_20));
+  DayFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_IMAGINE_16));
   text_layer_set_font(DayText, DayFont);
   text_layer_set_text_alignment(DayText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(1, 70, 20, 20));
+  LineText = text_layer_create(GRect(4, 73, 16, 16));
   text_layer_set_background_color(LineText, GColorClear);
   text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "_");
-  LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TRENCH_20));
+  LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_IMAGINE_16));
   text_layer_set_font(LineText, LineFont);
   text_layer_set_text_alignment(LineText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
   
   // Time Text
-  TimeText = text_layer_create(GRect(0, 102, 140, 54));
+  TimeText = text_layer_create(GRect(0, 108, 140, 54));
   text_layer_set_background_color(TimeText, GColorClear);
   text_layer_set_text_color(TimeText, GColorClear);
-  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TIME_38));
+  TimeFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TIME_44));
   text_layer_set_font(TimeText, TimeFont);
   text_layer_set_text_alignment(TimeText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(TimeText));
