@@ -125,9 +125,9 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 70, 36, 18));
+  LineText = text_layer_create(GRect(0, 46, 36, 18));
   text_layer_set_background_color(LineText, GColorClear);
-  text_layer_set_text_color(LineText, GColorClear);
+  text_layer_set_text_color(LineText, GColorBlack);
   text_layer_set_text(LineText, "_");
   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_RAVE_BOLD_14));
   text_layer_set_font(LineText, LineFont);
@@ -136,9 +136,9 @@ void main_window_load(Window *window) {
   
   
     // Line Text 2
-  LineText2 = text_layer_create(GRect(0, 71, 36, 18));
+  LineText2 = text_layer_create(GRect(0, 47, 36, 18));
   text_layer_set_background_color(LineText2, GColorClear);
-  text_layer_set_text_color(LineText2, GColorClear);
+  text_layer_set_text_color(LineText2, GColorBlack);
   text_layer_set_text(LineText2, "_");
 //   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_RAVE_BOLD_14));
   text_layer_set_font(LineText2, LineFont);

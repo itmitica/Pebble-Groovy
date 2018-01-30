@@ -15,7 +15,19 @@
             "media": [
                 {
                     "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_13",
+                    "name": "FONT_RAVE_BOLD_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_12",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -27,7 +39,7 @@
                 },
                 {
                     "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_12",
+                    "name": "FONT_RAVE_BOLD_13",
                     "targetPlatforms": null,
                     "type": "font"
                 },
