@@ -1,2 +1,2 @@
-# Groovy
-Pebble Steel Watchface - Groovy
+# TimeBurner Rave
+Pebble Steel Watchface - TimeBurner Rave
