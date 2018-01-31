@@ -9,8 +9,6 @@ TextLayer *TimeText;
 TextLayer *DateText;
 TextLayer *DayText;
 TextLayer *LineText;
-TextLayer *LineText2;
-TextLayer *LineText3;
 
 GFont TimeFont;
 GFont DateFont;
@@ -61,12 +59,8 @@ void update_date() {
     
     if ((today == 3) || (today == 5)) {
       text_layer_set_size(LineText, GSize(weekdaytowidth - 2, 18));
-      text_layer_set_size(LineText2, GSize(weekdaytowidth - 2, 18));
-      text_layer_set_size(LineText3, GSize(weekdaytowidth - 2, 18));
     } else {
       text_layer_set_size(LineText, GSize(weekdaytowidth, 18));
-      text_layer_set_size(LineText2, GSize(weekdaytowidth, 18));
-      text_layer_set_size(LineText3, GSize(weekdaytowidth, 18));
     }
   
 //   APP_LOG(APP_LOG_LEVEL_DEBUG, "Returned week day: %s", day);
@@ -128,34 +122,14 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 46, 36, 18));
+  LineText = text_layer_create(GRect(0, 70, 36, 18));
   text_layer_set_background_color(LineText, GColorClear);
-  text_layer_set_text_color(LineText, GColorBlack);
+  text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "_");
   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_RAVE_BOLD_14));
   text_layer_set_font(LineText, LineFont);
   text_layer_set_text_alignment(LineText, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
-  
-    // Line Text 2
-  LineText2 = text_layer_create(GRect(0, 47, 36, 18));
-  text_layer_set_background_color(LineText2, GColorClear);
-  text_layer_set_text_color(LineText2, GColorBlack);
-  text_layer_set_text(LineText2, "_");
-//   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_RAVE_BOLD_14));
-  text_layer_set_font(LineText2, LineFont);
-  text_layer_set_text_alignment(LineText2, GTextAlignmentRight);
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText2));
-  
-    // Line Text 3
-  LineText3 = text_layer_create(GRect(0, 72, 36, 18));
-  text_layer_set_background_color(LineText3, GColorClear);
-  text_layer_set_text_color(LineText3, GColorClear);
-  text_layer_set_text(LineText3, "_");
-//   LineFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_RAVE_BOLD_14));
-  text_layer_set_font(LineText3, LineFont);
-  text_layer_set_text_alignment(LineText3, GTextAlignmentRight);
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText3));
   
   // Time Text
   TimeText = text_layer_create(GRect(0, 108, 140, 54));
@@ -178,8 +152,6 @@ void main_window_unload(Window *window) {
   text_layer_destroy(DateText);
   text_layer_destroy(DayText);
   text_layer_destroy(LineText);
-  text_layer_destroy(LineText2);
-  text_layer_destroy(LineText3);
   
   // Destroy Font
   fonts_unload_custom_font(TimeFont);
