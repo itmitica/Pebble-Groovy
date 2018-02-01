@@ -2,12 +2,12 @@
     "author": "Dumitru Ungureanu",
     "dependencies": {},
     "keywords": [],
-    "name": "itmitica-groovy",
+    "name": "itmitica-timeburnerrave",
     "pebble": {
         "capabilities": [
             "location"
         ],
-        "displayName": "Groovy - itmitica",
+        "displayName": "TimeBurner Rave - itmitica",
         "enableMultiJS": true,
         "messageKeys": [],
         "projectType": "native",
@@ -103,5 +103,5 @@
             "watchface": true
         }
     },
-    "version": "1.80.0"
+    "version": "1.92.0"
 }

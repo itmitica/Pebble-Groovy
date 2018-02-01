@@ -57,7 +57,7 @@ void update_date() {
     int weekdaytowidth = 0;
     weekdaytowidth = 36 + 18*today;
     
-    if ((today == 3) || (today == 5)) {
+    if ((today == 4) || (today == 6)) {
       text_layer_set_size(LineText, GSize(weekdaytowidth - 2, 18));
     } else {
       text_layer_set_size(LineText, GSize(weekdaytowidth, 18));
