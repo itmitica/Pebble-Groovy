@@ -58,9 +58,12 @@ void update_date() {
     int weekdaytowidth = 0;
     weekdaytowidth = 36 + 18*today;
     
-    if ((today == 4) || (today == 6)) {
+    if (today == 4) {
       text_layer_set_size(LineText, GSize(weekdaytowidth - 2, 18));
       text_layer_set_size(LineText2, GSize(weekdaytowidth - 2, 18));
+    } else if (today == 6) {
+      text_layer_set_size(LineText, GSize(weekdaytowidth - 4, 18));
+      text_layer_set_size(LineText2, GSize(weekdaytowidth - 4, 18));
     } else {
       text_layer_set_size(LineText, GSize(weekdaytowidth, 18));
       text_layer_set_size(LineText2, GSize(weekdaytowidth, 18));
@@ -125,7 +128,7 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(DayText));
   
     // Line Text
-  LineText = text_layer_create(GRect(0, 54, 36, 18));
+  LineText = text_layer_create(GRect(0, 55, 36, 18));
   text_layer_set_background_color(LineText, GColorClear);
   text_layer_set_text_color(LineText, GColorClear);
   text_layer_set_text(LineText, "_");
@@ -135,7 +138,7 @@ void main_window_load(Window *window) {
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(LineText));
   
     // Line Text 2
-  LineText2 = text_layer_create(GRect(0, 55, 36, 18));
+  LineText2 = text_layer_create(GRect(0, 56, 36, 18));
   text_layer_set_background_color(LineText2, GColorClear);
   text_layer_set_text_color(LineText2, GColorClear);
   text_layer_set_text(LineText2, "_");

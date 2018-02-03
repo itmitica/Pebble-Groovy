@@ -14,12 +14,6 @@
         "resources": {
             "media": [
                 {
-                    "file": "fonts/telavision.ttf",
-                    "name": "FONT_TELAVISION_30",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
                     "file": "images/wallpaper.png",
                     "name": "IMAGE_WALLPAPER",
                     "targetPlatforms": null,
@@ -33,13 +27,25 @@
                 },
                 {
                     "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_28",
+                    "name": "FONT_TIME_12",
                     "targetPlatforms": null,
                     "type": "font"
                 },
                 {
                     "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_30",
+                    "name": "FONT_TIME_14",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnernormal.ttf",
+                    "name": "FONT_TIME_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/timeburnernormal.ttf",
+                    "name": "FONT_TIME_18",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -52,43 +58,19 @@
                 },
                 {
                     "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_18",
+                    "name": "FONT_TIME_30",
                     "targetPlatforms": null,
                     "type": "font"
                 },
                 {
                     "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_16",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_14",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/timeburnernormal.ttf",
-                    "name": "FONT_TIME_12",
+                    "name": "FONT_TIME_28",
                     "targetPlatforms": null,
                     "type": "font"
                 },
                 {
                     "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_24",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_16",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
-                    "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_12",
+                    "name": "FONT_RAVE_BOLD_13",
                     "targetPlatforms": null,
                     "type": "font"
                 },
@@ -100,7 +82,19 @@
                 },
                 {
                     "file": "fonts/Ravebold.ttf",
-                    "name": "FONT_RAVE_BOLD_13",
+                    "name": "FONT_RAVE_BOLD_12",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Ravebold.ttf",
+                    "name": "FONT_RAVE_BOLD_24",
                     "targetPlatforms": null,
                     "type": "font"
                 }
@@ -115,5 +109,5 @@
             "watchface": true
         }
     },
-    "version": "1.98.0"
+    "version": "1.99.0"
 }
